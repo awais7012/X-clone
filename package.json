@@ -3,11 +3,12 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "backend/server.js",
-	"scripts": {
-		"dev": "NODE_ENV=development nodemon backend/server.js",
-		"start": "NODE_ENV=development node backend/server.js",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-	},
+	
+		"scripts": {
+		  "dev": "NODE_ENV=development nodemon backend/server.js",
+		  "start": "npm run build && node backend/server.js",
+		  "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+		},  
 	"keywords": [],
 	"author": "",
 	"type": "module",
